@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/kotlin/com/programming/kotlin/chapter03/Program.kt" line="70" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/kotlin/com/programming/kotlin/chapter03/Program.kt" line="91" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccc04344-c57f-4a77-aa8b-dd3226d38aaa" name="Default" comment="" />
@@ -49,8 +49,8 @@
       <file leaf-file-name="Program.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/programming/kotlin/chapter03/Program.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+            <state relative-caret-position="588">
+              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
             </state>
           </provider>
         </entry>
@@ -381,8 +381,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/programming/kotlin/chapter03/Program.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+        <state relative-caret-position="588">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
         </state>
       </provider>
     </entry>

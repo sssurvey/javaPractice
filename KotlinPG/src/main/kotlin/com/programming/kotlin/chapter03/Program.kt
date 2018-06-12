@@ -1,4 +1,7 @@
 package com.programming.kotlin.chapter03
+
+import java.util.concurrent.SubmissionPublisher
+
 //class people baisc
 class People constructor(val name:String , val age:Int, var phoneNumber: Number){
     override fun toString(): String {
@@ -40,6 +43,32 @@ class Person (name:String,age: Int,phoneNumber: Number){
     fun getPhoneNumber():Any {return this.phoneNumber}
 }
 
+//nested class
+class Bank constructor(val name:String, staff_amount:Int){
+    private class BOA constructor(name: String, staff_amount: Int, address:String){
+    // I have setted the inner class to private, thus it can only be accessed within the outer class
+    }
+}
+
+//static inner class equivlent
+class Aclass constructor(name:String,age:Int){
+    private var aName = name
+    class BstaticClass constructor(val number:Int){
+        //this cant access the name, since its private
+        //this class is the equivlent to the static
+    }
+    inner class  CinnerClass constructor(val digits:Int){
+        fun printPrivate(){
+            println(this@Aclass.aName)
+        }
+    }
+}
+
+//data class -> created just for save data
+data class Book(val name: String, val publisher: String, val version: String)
+
+
+
 fun main(args: Array<String>) {
     var people1 = People("Jsc Joo",19,3122132222)
     println(people1)
@@ -59,14 +88,6 @@ fun main(args: Array<String>) {
     2. private = the class is only visible in the scope of the file defining it
     3. protected = direct instance creation of the class is not allowed, however, inheritance is allowed, subclass only
      */
-
-    
-
-
-
-
-
-
 
 }
 
