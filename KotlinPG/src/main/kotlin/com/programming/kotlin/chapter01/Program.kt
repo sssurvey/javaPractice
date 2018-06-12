@@ -350,6 +350,7 @@ fun main(args: Array<String>) {
         }
     }
 
+    println("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
     // when, the second form
     fun whenWithoutArgs(x: Int, y: Int){
         when{
@@ -370,7 +371,30 @@ fun main(args: Array<String>) {
         }
         return largest(largest(a,b),largest(b,c))
     }; println(largestNum(3,4,5))
-    // pdf page 69 review -> revisit
+
+    fun printLessThanTwo() {
+        val list = listOf(1,2,3,4)
+        list.forEach(fun(x){
+            if(x<2) println(x) else return
+        })
+        println("This line will still execute")
+    }; printLessThanTwo()
+
+    fun printUntilStop(){
+        val list = listOf("a", "b", "stop", "c")
+        list.forEach mytag@ {
+            if (it == "stop") return@mytag
+            else print(it)
+        }
+    }; printUntilStop()
+
+    fun printUntilStop2(){
+        val list = listOf("a","b","stop","c")
+        list.forEach{
+            if(it == "stop") return@forEach
+            else print(it)
+        }
+    }; printUntilStop2()
 
     //Type hierarchy
     /*
@@ -380,6 +404,7 @@ fun main(args: Array<String>) {
     --BOTTOM--
     "Nothing" -- This is the subcalss of all type
      */
+
 
 
 
